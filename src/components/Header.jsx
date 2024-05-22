@@ -1,9 +1,63 @@
 import { useState } from "react";
+import Button from "./Button";
 
 const Header = () => {
-    const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 
-    return <header></header>;
+	return (
+		<>
+			<header className="bg-crema fixed top-0 left-0 w-full z-50">
+				{/* // * Navegacion para movil */}
+				<div className="flex items-center justify-between py-4 px-4 shadow-sm md:hidden">
+					<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+					<Button onClick={() => setOpen(!open)}>Menú</Button>
+				</div>
+
+				{/* // * Navegacion para escritorio */}
+				<div className="md:items-center md:justify-between py-6 px-4 shadow-sm hidden md:flex">
+					<Button onClick={() => setOpen(!open)}>Menú</Button>
+					<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+
+					<div className="relative">
+						<div className="flex items-center justify-center absolute -left-[75px] font-instrumentSans font-sm">
+							<span className="font-bold">Es</span>
+							<span className="mx-2 block">|</span>
+							<span>En</span>
+						</div>
+						<Button.Link url={""}>Book now</Button.Link>
+					</div>
+				</div>
+			</header>
+
+			{open && (
+				<nav className="uppercase bg-crema w-full pt-[100px] pb-8 fixed z-40 top-0 left-0 h-svh flex items-center justify-center flex-wrap flex-row md:min-h-[665px] md:h-auto overflow-auto">
+					<ul className="text-center w-full">
+						<li className="mb-4 md:mb-6">Nosotros</li>
+						<li className="mb-4 md:mb-6">Ofertas especiales</li>
+						<li className="mb-4 md:mb-6">Habitaciones</li>
+						<li className="mb-4 md:mb-6">Experiencias</li>
+						<li className="mb-4 md:mb-6">Gastronomía</li>
+						<li className="mb-4 md:mb-6">Sala de juntas</li>
+						<li>Parras coahuila</li>
+					</ul>
+
+					<div className="w-full text-center py-10 md:hidden">
+						<Button.Link url={""}>Book now</Button.Link>
+					</div>
+
+					<div className="flex items-center justify-center font-instrumentSans font-sm md:hidden">
+						<span className="font-bold">Es</span>
+						<span className="mx-2 block">|</span>
+						<span>En</span>
+					</div>
+
+					<picture className="block w-full pt-10 md:p-0">
+						<img src="/img/logo-menu.png" className="w-[80px] mx-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2" alt="Icono" />
+					</picture>
+				</nav>
+			)}
+		</>
+	);
 };
 
 export default Header;
