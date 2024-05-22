@@ -19,7 +19,7 @@ const Header = () => {
 					<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
 
 					<div className="relative">
-						<div className="flex items-center justify-center absolute -left-[75px] font-instrumentSans font-sm">
+						<div className="flex items-center justify-center text-black absolute -left-[75px] font-instrumentSans font-sm">
 							<span className="font-bold">Es</span>
 							<span className="mx-2 block">|</span>
 							<span>En</span>
@@ -29,6 +29,7 @@ const Header = () => {
 				</div>
 			</header>
 
+			{open && <div className="bg-black fixed z-30 w-full h-svh bg-opacity-20 backdrop-blur-sm"></div>}
 			{open && (
 				<nav className="uppercase bg-crema w-full pt-[100px] pb-8 fixed z-40 top-0 left-0 h-svh flex items-center justify-center flex-wrap flex-row md:min-h-[665px] md:h-auto overflow-auto">
 					<ul className="text-center w-full">
@@ -45,7 +46,7 @@ const Header = () => {
 						<Button.Link url={""}>Book now</Button.Link>
 					</div>
 
-					<div className="flex items-center justify-center font-instrumentSans font-sm md:hidden">
+					<div className="flex items-center justify-center text-black font-instrumentSans font-sm md:hidden">
 						<span className="font-bold">Es</span>
 						<span className="mx-2 block">|</span>
 						<span>En</span>

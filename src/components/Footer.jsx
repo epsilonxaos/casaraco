@@ -2,7 +2,7 @@ import { Container } from "./Container";
 
 const Footer = () => {
 	return (
-		<footer className="w-full px-4 py-5 font-instrumentSans bg-cafe text-white">
+		<footer className="w-full py-5 font-instrumentSans bg-cafe text-white">
 			<Container>
 				<ul className="mx-auto flex w-full flex-col items-center justify-between md:flex-row lg:text-sm xl:text-base">
 					<li className="mb-4 lg:mb-0">Casa Raco</li>
