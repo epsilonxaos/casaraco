@@ -23,19 +23,22 @@ export default function App() {
 			<AnimatePresence mode="wait">
 				<ScrollToTop />
 
-				<Routes location={location} key={location.pathname}>
-					<Route
-						index
-						element={
-							<PageTransition>
-								<Home />
-							</PageTransition>
-						}
-					/>
+				<main>
+					<Routes location={location} key={location.pathname}>
+						<Route
+							index
+							element={
+								<PageTransition>
+									<Home />
+								</PageTransition>
+							}
+						/>
 
-					<Route path="*" element={<PageNotFound />} />
-				</Routes>
+						<Route path="*" element={<PageNotFound />} />
+					</Routes>
+				</main>
 			</AnimatePresence>
+
 			<Footer />
 		</>
 	);
