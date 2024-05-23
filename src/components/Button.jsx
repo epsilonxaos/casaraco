@@ -6,6 +6,14 @@ const Button = ({ children, onClick }) => {
 	);
 };
 
+const ButtonCafe = ({ children, onClick }) => {
+	return (
+		<button {...(onClick && { onClick })} type="button" className="py-3 uppercase bg-cafe border-2 px-4 min-w-[80px] md:min-w-[120px] xl:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-white hover:bg-crema hover:text-cafe transition-colors">
+			{children}
+		</button>
+	);
+};
+
 const Link = ({ children, url }) => {
 	return (
 		<a className="py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] xl:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors" href={url} target="_blank" rel="noopener noreferrer">
@@ -14,6 +22,7 @@ const Link = ({ children, url }) => {
 	);
 };
 
+Button.Cafe = ButtonCafe;
 Button.Link = Link;
 
 export default Button;
