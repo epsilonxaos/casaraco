@@ -6,7 +6,7 @@ export const Bienvenida = () => {
 	return (
 		<section className="text-center py-10">
 			<Container>
-				<img src="/public/img/logo-menu.png" alt="icono" className="mx-auto w-[100px] mb-4" />
+				<img src="/img/logo-menu.png" alt="icono" className="mx-auto w-[100px] mb-4" />
 
 				<Text.Title className="mb-5">Te damos la bienvenida a</Text.Title>
 
