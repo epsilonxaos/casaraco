@@ -1,6 +1,16 @@
-const Button = ({ children, onClick }) => {
+import { twMerge } from "tailwind-merge";
+
+const Button = ({ children, onClick, className = "" }) => {
 	return (
-		<button {...(onClick && { onClick })} type="button" className="py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] xl:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors">
+		<button {...(onClick && { onClick })} type="button" className={twMerge("py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] lg:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors", className)}>
+			{children}
+		</button>
+	);
+};
+
+const ButtonCafe = ({ children, onClick }) => {
+	return (
+		<button {...(onClick && { onClick })} type="button" className="py-2 uppercase bg-cafe w-full border-2 px-4 min-w-[80px] max-w-[300px] md:text-sm lg:text-base border-cafe text-crema hover:bg-crema hover:text-cafe transition-colors">
 			{children}
 		</button>
 	);
@@ -24,5 +34,6 @@ const Link = ({ children, url }) => {
 
 Button.Cafe = ButtonCafe;
 Button.Link = Link;
+Button.Cafe = ButtonCafe;
 
 export default Button;
