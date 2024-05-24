@@ -1,6 +1,8 @@
-const Button = ({ children, onClick }) => {
+import { twMerge } from "tailwind-merge";
+
+const Button = ({ children, onClick, className = "" }) => {
 	return (
-		<button {...(onClick && { onClick })} type="button" className="py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] lg:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors">
+		<button {...(onClick && { onClick })} type="button" className={twMerge("py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] lg:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors", className)}>
 			{children}
 		</button>
 	);
