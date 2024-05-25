@@ -17,13 +17,13 @@ export const Experiences = () => {
 					</div>
 					<div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-2 lg:gap-4 md:grid-cols-3">
 						<picture className="col-span-1">
-							<img src="/public/img/home/1.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
+							<img src="/img/home/1.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
 						</picture>
 						<picture className="col-span-1">
-							<img src="/public/img/home/2.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
+							<img src="/img/home/2.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
 						</picture>
 						<picture className="col-span-2 md:col-span-1">
-							<img src="/public/img/home/3.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
+							<img src="/img/home/3.png" className="h-[200px] md:h-[500px] lg:h-[650px] object-cover w-full" alt="experiencia 1" />
 						</picture>
 					</div>
 				</div>

@@ -31,7 +31,7 @@ export const Rooms = () => {
 						<picture className="relative lg:w-[60%]">
 							<img className="w-full" src="/img/rooms/room1.jpg" alt="Habitacion doble Queen" />
 
-							<img src="/public/img/rooms/sello.png" className="absolute max-lg:-bottom-[55px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:left-auto lg:-right-[55px] max-lg:-translate-x-1/2 w-[110px]" alt="Sello" />
+							<img src="/img/rooms/sello.png" className="absolute max-lg:-bottom-[55px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:left-auto lg:-right-[55px] max-lg:-translate-x-1/2 w-[110px]" alt="Sello" />
 						</picture>
 
 						<main className="text-black text-center py-8 pt-20 lg:pt-8 px-6 lg:w-[40%]">
@@ -50,7 +50,7 @@ export const Rooms = () => {
 						<picture className="relative lg:w-[60%] lg:order-2">
 							<img className="w-full" src="/img/rooms/room2.jpg" alt="Habitacion doble Queen" />
 
-							<img src="/public/img/rooms/sello.png" className="absolute max-lg:-bottom-[55px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:-left-[55px] max-lg:-translate-x-1/2 w-[110px]" alt="Sello" />
+							<img src="/img/rooms/sello.png" className="absolute max-lg:-bottom-[55px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:-left-[55px] max-lg:-translate-x-1/2 w-[110px]" alt="Sello" />
 						</picture>
 
 						<main className="text-black text-center py-8 pt-20 lg:pt-8 px-6 lg:w-[40%] lg:order-1">

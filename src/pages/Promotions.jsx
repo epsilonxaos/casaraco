@@ -6,7 +6,7 @@ import { PromotionCard } from "./promotions/PromotionCard";
 export const Promotions = () => {
 	return (
 		<>
-			<Banner src={"/public/img/promociones/banner.jpg"} />
+			<Banner src={"/img/promociones/banner.jpg"} />
 
 			<section className="py-10 lg:py-16 xl:py-24">
 				<Container>

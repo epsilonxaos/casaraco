@@ -5,7 +5,7 @@ import Text from "../components/Text";
 export const CasaRaco = () => {
 	return (
 		<>
-			<Banner src={"/public/img/casa-raco/banner.jpg"} />
+			<Banner src={"/img/casa-raco/banner.jpg"} />
 
 			<section className="pt-10 lg:pt-16 xl:pt-24">
 				<div className="relative">
@@ -41,7 +41,7 @@ export const CasaRaco = () => {
 				</blockquote>
 			</section>
 
-			<Banner src={"/public/img/casa-raco/banner2.jpg"} className="max-h-[600px]" />
+			<Banner src={"/img/casa-raco/banner2.jpg"} className="max-h-[600px]" />
 		</>
 	);
 };
