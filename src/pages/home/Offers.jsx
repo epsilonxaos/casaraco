@@ -4,7 +4,7 @@ import Text from "../../components/Text";
 
 export const Offers = () => {
 	return (
-		<section className="py-10 text-center">
+		<section className="py-10 lg:py-16 xl:py-24 text-center">
 			<Container>
 				<Text.TitleSections className="mb-6">Ofertas Especiales</Text.TitleSections>
 
