@@ -11,6 +11,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import "./font/fonts.css";
 import "./css/index.css";
+import { Promotions } from "./pages/Promotions";
+import { CasaRaco } from "./pages/CasaRaco";
 
 export default function App() {
 	const location = useLocation();
@@ -20,9 +22,8 @@ export default function App() {
 	return (
 		<>
 			<Header />
+			<ScrollToTop />
 			<AnimatePresence mode="wait">
-				<ScrollToTop />
-
 				<main>
 					<Routes location={location} key={location.pathname}>
 						<Route
@@ -30,6 +31,22 @@ export default function App() {
 							element={
 								<PageTransition>
 									<Home />
+								</PageTransition>
+							}
+						/>
+						<Route
+							path="/promociones"
+							element={
+								<PageTransition>
+									<Promotions />
+								</PageTransition>
+							}
+						/>
+						<Route
+							path="/casa-raco"
+							element={
+								<PageTransition>
+									<CasaRaco />
 								</PageTransition>
 							}
 						/>
