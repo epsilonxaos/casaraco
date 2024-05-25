@@ -27,17 +27,23 @@ const Footer = () => {
 
 						<ul className="sm:flex sm:items-center sm:justify-center sm:gap-10">
 							<li className="mb-4 sm:mb-0">
-								<TbPhoneCall className="inline-block text-cafe" /> <a href="tel:+5218424239902">+52 1 842 423 9902</a>
+								<Text>
+									<TbPhoneCall className="inline-block text-cafe" /> <a href="tel:+5218424239902">+52 1 842 423 9902</a>
+								</Text>
 							</li>
 							<li className="mb-4 sm:mb-0">
-								<MdOutlineEmail className="inline-block text-cafe" />{" "}
-								<a className="underline" href="mailto:reservaciones@casaraco.mx">
-									reservaciones@casaraco.mx
-								</a>
+								<Text>
+									<MdOutlineEmail className="inline-block text-cafe" />{" "}
+									<a className="underline" href="mailto:reservaciones@casaraco.mx">
+										reservaciones@casaraco.mx
+									</a>
+								</Text>
 							</li>
 							<li>
-								<FiFacebook className="inline-block text-cafe" />
-								<FaInstagram className="inline-block text-cafe" /> @casa.raco
+								<Text>
+									<FiFacebook className="inline-block text-cafe" />
+									<FaInstagram className="inline-block text-cafe" /> @casa.raco
+								</Text>
 							</li>
 						</ul>
 					</address>
@@ -53,7 +59,7 @@ const Footer = () => {
 								<li className="w-full lg:w-auto">Políticas de reservación</li>
 								<li className="mx-3 hidden lg:block lg:w-auto">|</li>
 								<li className="w-full lg:w-auto">Cookies</li>
-								<li className="mx-3 hidden">|</li>
+								<li className="mx-3 hidden lg:block">|</li>
 								<li className="w-full lg:w-auto">Cancelar Reserva</li>
 								<li className="mx-3 hidden lg:w-auto lg:block">|</li>
 								<li className="w-full lg:w-auto">Derechos Reservados</li>
