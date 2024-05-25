@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -9,14 +10,18 @@ const Header = () => {
 			<header className="bg-crema fixed top-0 left-0 w-full z-50">
 				{/* // * Navegacion para movil */}
 				<div className="flex items-center justify-between py-4 px-4 shadow-sm md:hidden">
-					<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+					<Link to={"/"} onClick={() => setOpen(false)}>
+						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+					</Link>
 					<Button onClick={() => setOpen(!open)}>Menú</Button>
 				</div>
 
 				{/* // * Navegacion para escritorio */}
 				<div className="md:items-center md:justify-between py-6 px-4 shadow-sm hidden md:flex">
 					<Button onClick={() => setOpen(!open)}>Menú</Button>
-					<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+					<Link to={"/"} onClick={() => setOpen(false)}>
+						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+					</Link>
 
 					<div className="relative">
 						<div className="flex items-center justify-center text-black absolute -left-[75px] font-instrumentSans font-sm">
@@ -29,14 +34,30 @@ const Header = () => {
 				</div>
 			</header>
 
-			{open && <div className="bg-black fixed z-30 w-full h-svh bg-opacity-20 backdrop-blur-sm"></div>}
+			{open && <div className="bg-black fixed z-30 w-full h-svh bg-opacity-20 backdrop-blur-sm" onClick={() => setOpen(false)}></div>}
 			{open && (
 				<nav className="uppercase bg-crema w-full pt-[100px] pb-8 fixed z-40 top-0 left-0 h-svh flex items-center justify-center flex-wrap flex-row md:min-h-[665px] md:h-auto overflow-auto">
 					<ul className="text-center w-full">
-						<li className="mb-4 md:mb-6">Nosotros</li>
-						<li className="mb-4 md:mb-6">Ofertas especiales</li>
-						<li className="mb-4 md:mb-6">Habitaciones</li>
-						<li className="mb-4 md:mb-6">Experiencias</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"casa-raco"}>
+								Nosotros
+							</Link>
+						</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"promociones"}>
+								Ofertas especiales
+							</Link>
+						</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"habitaciones"}>
+								Habitaciones
+							</Link>
+						</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"experiencias"}>
+								Experiencias
+							</Link>
+						</li>
 						<li className="mb-4 md:mb-6">Gastronomía</li>
 						<li className="mb-4 md:mb-6">Sala de juntas</li>
 						<li>Parras coahuila</li>
