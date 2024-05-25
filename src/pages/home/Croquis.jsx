@@ -3,7 +3,7 @@ import Text from "../../components/Text";
 
 export const Croquis = () => {
 	return (
-		<section className="py-10">
+		<section className="py-10 lg:py-16 xl:py-24">
 			<Container>
 				<div className="max-w-[660px] mx-auto text-center mb-8">
 					<Text.TitleSections className="lg:inline font-medium">“El hotel mejor situado en Parras”</Text.TitleSections>
