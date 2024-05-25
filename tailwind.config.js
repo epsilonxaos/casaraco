@@ -11,6 +11,9 @@ export default {
 				cormorant: ["Cormorant Garamond", "sans-serif"],
 				instrumentSans: ["Instrument Sans", "sans-serif"],
 			},
+			boxShadow: {
+				card: "5px 5px 25px 0 rgba(0, 0, 0, 0.1)",
+			},
 		},
 	},
 	plugins: [],
