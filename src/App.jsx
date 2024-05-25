@@ -13,6 +13,7 @@ import "./font/fonts.css";
 import "./css/index.css";
 import { Promotions } from "./pages/Promotions";
 import { CasaRaco } from "./pages/CasaRaco";
+import { Experiences } from "./pages/Experiences";
 
 export default function App() {
 	const location = useLocation();
@@ -47,6 +48,14 @@ export default function App() {
 							element={
 								<PageTransition>
 									<CasaRaco />
+								</PageTransition>
+							}
+						/>
+						<Route
+							path="/experiencias"
+							element={
+								<PageTransition>
+									<Experiences />
 								</PageTransition>
 							}
 						/>
