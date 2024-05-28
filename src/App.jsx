@@ -17,6 +17,7 @@ import { Experiences } from "./pages/Experiences";
 import { Rooms } from "./pages/Rooms";
 import { Coahuila } from "./pages/Coahuila";
 import { Gastronomy } from "./pages/Gastronomy";
+import { Boardroom } from "./pages/Boardroom";
 
 export default function App() {
 	const location = useLocation();
@@ -83,6 +84,14 @@ export default function App() {
 							element={
 								<PageTransition>
 									<Gastronomy />
+								</PageTransition>
+							}
+						/>
+						<Route
+							path="/sala-de-juntas"
+							element={
+								<PageTransition>
+									<Boardroom />
 								</PageTransition>
 							}
 						/>
