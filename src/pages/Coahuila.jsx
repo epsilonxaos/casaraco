@@ -10,8 +10,8 @@ export const Coahuila = () => {
 			<SectionBrownAndWhite
 				header={
 					<>
-						<Text.TitleSections className="max-w-[610px] mx-auto mb-12 md:mb-16">Te damos la bienvenida a Parras</Text.TitleSections>
-						<Text className="mb-6 font-bold">Al sur de Coahuila se encuentra Parras de la fuente, un pueblo mágico lleno de tradiciones, nogales y viñedos. Se trata de un oasis entre el desierto lleno de magia para aquellos amantes del vino y de la aventura listos para descubrir nuevos horizontes.</Text>
+						<Text.TitleSections className="max-w-[610px] mx-auto mb-10 md:mb-12">Te damos la bienvenida a Parras</Text.TitleSections>
+						<Text className="mb-6">Al sur de Coahuila se encuentra Parras de la fuente, un pueblo mágico lleno de tradiciones, nogales y viñedos. Se trata de un oasis entre el desierto lleno de magia para aquellos amantes del vino y de la aventura listos para descubrir nuevos horizontes.</Text>
 						<Text>Situado en el corazón de Coahuila, este pueblo mágico es un verdadero tesoro para aquellos que desean sumergirse en la historia y disfrutar de la belleza de la naturaleza y la arquitectura. Con más de 400 años de historia, Parras no es solo un destino, sino una experiencia viva de tradición y cultura mexicana.</Text>
 					</>
 				}
