@@ -2,8 +2,8 @@ import { Container } from "./Container";
 
 export const SectionBrownAndWhite = ({ header, main, footer, cover, bg }) => {
 	return (
-		<section className="pt-10 lg:pt-16 xl:pt-24">
-			<div className="relative bg-crema bg-blend-darken bg-no-repeat bg-contain bg-right-top" style={{ backgroundImage: "url(" + bg + ")" }}>
+		<section className="">
+			<div className="pt-10 lg:pt-16 xl:pt-24 relative bg-crema bg-blend-darken bg-no-repeat bg-cover bg-top" style={{ backgroundImage: "url(" + bg + ")" }}>
 				<Container className="max-w-6xl text-center">
 					{header}
 
