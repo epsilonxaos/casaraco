@@ -11,7 +11,7 @@ export const SectionBrownAndWhite = ({ header, main, footer, cover, bg }) => {
 						<picture className="col-span-1 relative top-[45px]">
 							<img src={cover} className="mx-auto w-max h-full md:min-h-[550px] object-cover" alt="Relajacion" />
 						</picture>
-						<div className="col-span-1 text-center md:text-left flex items-center h-full">
+						<div className="col-span-1 text-center md:text-left flex items-center h-full xl:pl-8">
 							<div>{main}</div>
 						</div>
 					</div>
