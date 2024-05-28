@@ -19,7 +19,7 @@ const Footer = () => {
 						<Text className="mb-8">
 							Para mantenerte informado de todas <span className="font-bold">nuestras novedades y promociones.</span>
 						</Text>
-						<Button.Cafe className="rounded-none">Déjanos tu correo</Button.Cafe>
+						<Button.Cafe className="rounded-none hover:text-black hover:border-black">Déjanos tu correo</Button.Cafe>
 					</div>
 
 					<address>
