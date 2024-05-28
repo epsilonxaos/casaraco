@@ -12,7 +12,9 @@ export const Gastronomy = () => {
 				<div className="max-w-[460px] mx-auto">
 					<Text.TitleSections className="mb-3">GASTRONOMÍA</Text.TitleSections>
 					<Text className="mb-5">Acompáñanos a vivir una experiencia gastronómica única con los mejores productos de la región.</Text>
-					<Button className="bg-transparent">Ver más</Button>
+					<Button.To url="/gastronomia" className="block max-w-[140px] mx-auto bg-transparent">
+						Ver más
+					</Button.To>
 				</div>
 			</div>
 		</section>

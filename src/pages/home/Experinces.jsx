@@ -12,7 +12,9 @@ export const Experiences = () => {
 							<Text.TitleSections className="mb-3">Experiencias</Text.TitleSections>
 							<Text className="mb-5">Parras está lleno de magia por ser descubierta. Acompáñanos a crear una experiencia a tu medida.</Text>
 
-							<Button>Ver más</Button>
+							<Button.To url="/experiencias" className="block max-w-[140px] mx-auto">
+								Ver más
+							</Button.To>
 						</div>
 					</div>
 					<div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-2 lg:gap-4 md:grid-cols-3">

@@ -30,7 +30,9 @@ const CardHabitacion = () => {
 			<Text.TitleSections className="text-black mb-4">Conoce nuestras habitaciones</Text.TitleSections>
 			<Text className="text-black mb-8">Nuestras cómodas habitaciones tienen todo lo necesario para que tengas una estancia placentera de acuerdo a tus necesidades.</Text>
 
-			<Button className="bg-transparent border-black text-black hover:bg-black hover:text-white">Ver más</Button>
+			<Button.To url="/habitaciones" className="bg-transparent block max-w-[140px] mx-auto border-black text-black hover:bg-black hover:text-white">
+				Ver más
+			</Button.To>
 		</div>
 	);
 };

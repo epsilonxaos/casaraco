@@ -13,7 +13,9 @@ export const Coahuila = () => {
 					<Text.TitleSections className="mb-5">
 						Conoce el escenario <br /> PARRAS COAHUILA
 					</Text.TitleSections>
-					<Button className="bg-transparent">Ver más</Button>
+					<Button.To url="/parras-coahuila" className="block max-w-[140px] mx-auto bg-transparent">
+						Ver más
+					</Button.To>
 				</div>
 			</div>
 		</section>

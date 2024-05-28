@@ -12,7 +12,9 @@ export const Boardroom = () => {
 				<div className="max-w-[460px] mx-auto">
 					<Text.TitleSections className="mb-3">Planea con nosotros tu estancia corporativa</Text.TitleSections>
 					<Text className="mb-5">y permítenos encargarnos de todo. Concentra a tu equipo de trabajo en nuestra cómoda sala de juntas con capacidad de hasta 16 personas.</Text>
-					<Button className="bg-transparent">Ver más</Button>
+					<Button.To url="/sala-de-juntas" className="block max-w-[140px] mx-auto bg-transparent">
+						Ver más
+					</Button.To>
 				</div>
 			</div>
 		</section>

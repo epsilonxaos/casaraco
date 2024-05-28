@@ -19,7 +19,9 @@ export const Bienvenida = () => {
 
 				<Amenities />
 
-				<Button>Ver más</Button>
+				<Button.To url="/casa-raco" className="border-black text-black bg-transparent hover:bg-black hover:text-crema w-[141px] block mx-auto">
+					Ver más
+				</Button.To>
 			</Container>
 		</section>
 	);
