@@ -72,7 +72,7 @@ export default function App() {
 							}
 						/>
 						<Route
-							path="/coahuila"
+							path="/parras-coahuila"
 							element={
 								<PageTransition>
 									<Coahuila />

@@ -58,9 +58,21 @@ const Header = () => {
 								Experiencias
 							</Link>
 						</li>
-						<li className="mb-4 md:mb-6">Gastronomía</li>
-						<li className="mb-4 md:mb-6">Sala de juntas</li>
-						<li>Parras coahuila</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"/gastronomia"}>
+								Gastronomía
+							</Link>
+						</li>
+						<li className="mb-4 md:mb-6">
+							<Link onClick={() => setOpen(false)} to={"/sala-de-juntas"}>
+								Sala de juntas
+							</Link>
+						</li>
+						<li>
+							<Link onClick={() => setOpen(false)} to={"/parras-coahuila"}>
+								Parras coahuila
+							</Link>
+						</li>
 					</ul>
 
 					<div className="w-full text-center py-10 md:hidden">
