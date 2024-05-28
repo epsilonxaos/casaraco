@@ -16,6 +16,7 @@ import { CasaRaco } from "./pages/CasaRaco";
 import { Experiences } from "./pages/Experiences";
 import { Rooms } from "./pages/Rooms";
 import { Coahuila } from "./pages/Coahuila";
+import { Gastronomy } from "./pages/Gastronomy";
 
 export default function App() {
 	const location = useLocation();
@@ -74,6 +75,14 @@ export default function App() {
 							element={
 								<PageTransition>
 									<Coahuila />
+								</PageTransition>
+							}
+						/>
+						<Route
+							path="/gastronomia"
+							element={
+								<PageTransition>
+									<Gastronomy />
 								</PageTransition>
 							}
 						/>
