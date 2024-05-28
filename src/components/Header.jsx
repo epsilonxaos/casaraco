@@ -13,12 +13,12 @@ const Header = () => {
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
 					</Link>
-					<Button onClick={() => setOpen(!open)}>Menú</Button>
+					<Button onClick={() => setOpen(!open)}>{open ? "Cerrar" : "Menú"}</Button>
 				</div>
 
 				{/* // * Navegacion para escritorio */}
 				<div className="md:items-center md:justify-between py-6 px-4 shadow-sm hidden md:flex">
-					<Button onClick={() => setOpen(!open)}>Menú</Button>
+					<Button onClick={() => setOpen(!open)}>{open ? "Cerrar" : "Menú"}</Button>
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
 					</Link>
