@@ -1,6 +1,23 @@
 import { useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+const Language = () => {
+	const { i18n } = useTranslation();
+
+	return (
+		<>
+			<span onClick={() => i18n.changeLanguage("es")} className={i18n.language == "es" ? "font-bold" : ""}>
+				Es
+			</span>
+			<span className="mx-2 block">|</span>
+			<span onClick={() => i18n.changeLanguage("en")} className={i18n.language == "en" ? "font-bold" : ""}>
+				En
+			</span>
+		</>
+	);
+};
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -25,9 +42,7 @@ const Header = () => {
 
 					<div className="relative">
 						<div className="flex items-center justify-center text-black absolute -left-[75px] font-instrumentSans font-sm">
-							<span className="font-bold">Es</span>
-							<span className="mx-2 block">|</span>
-							<span>En</span>
+							<Language />
 						</div>
 						<Button.Link url={""}>Book now</Button.Link>
 					</div>
@@ -80,9 +95,7 @@ const Header = () => {
 					</div>
 
 					<div className="flex items-center justify-center text-black font-instrumentSans font-sm md:hidden">
-						<span className="font-bold">Es</span>
-						<span className="mx-2 block">|</span>
-						<span>En</span>
+						<Language />
 					</div>
 
 					<picture className="block w-full pt-10 md:p-0">

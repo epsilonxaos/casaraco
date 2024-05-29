@@ -19,6 +19,8 @@ import { Coahuila } from "./pages/Coahuila";
 import { Gastronomy } from "./pages/Gastronomy";
 import { Boardroom } from "./pages/Boardroom";
 
+import "./lang/i18n";
+
 export default function App() {
 	const location = useLocation();
 
