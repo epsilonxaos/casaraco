@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import { Container } from "../../components/Container";
 import Text from "../../components/Text";
 
 export const Offers = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section className="py-10 lg:py-16 xl:py-24 text-center">
 			<Container>
-				<Text.TitleSections className="mb-6">Ofertas Especiales</Text.TitleSections>
+				<Text.TitleSections className="mb-6">{t("home.offsers.title")}</Text.TitleSections>
 
-				<Text className="mb-10">Reserva directamente con nosotros y obtén tarifas especiales para tu estancia.</Text>
+				<Text className="mb-10">{t("home.offsers.desc")}</Text>
 			</Container>
 
 			<div className="relative">
@@ -16,17 +19,13 @@ export const Offers = () => {
 
 				<div className="max-w-[1500px] grid lg:grid-cols-3 grid-cols-1 pt-10 relative z-10 mx-auto">
 					<CardOffer cover="/img/home/imagen1.jpg" url={"/sala-de-juntas"}>
-						<Text className="text-black mb-4">
-							Ahorra en grupos empresariales <span className="font-bold">hasta 50% Descuento</span> de sala de junta empresariales
-						</Text>
+						<Text className="text-black mb-4">{t("home.offsers.card1")}</Text>
 					</CardOffer>
 					<CardOffer cover="/img/home/imagen2.jpg" url={"/habitaciones"}>
-						<Text className="text-black mb-4">
-							Recibe un <span className="font-bold">15% de descuento en reservaciones</span> de 3 noches o más
-						</Text>
+						<Text className="text-black mb-4">{t("home.offsers.card2")}</Text>
 					</CardOffer>
 					<CardOffer cover="/img/home/imagen3.jpg" url={"/"}>
-						<Text className="text-black mb-4">Necesitas la casa completa da clic aquí</Text>
+						<Text className="text-black mb-4">{t("home.offsers.card3")}</Text>
 					</CardOffer>
 				</div>
 			</div>
@@ -35,6 +34,8 @@ export const Offers = () => {
 };
 
 const CardOffer = ({ cover, url, children }) => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="col-span-1 px-4 mb-8">
 			<article className="shadow-lg sm:flex sm:items-center lg:flex-col h-full">
@@ -46,7 +47,7 @@ const CardOffer = ({ cover, url, children }) => {
 					{children}
 
 					<Button.To url={url} className="py-2 max-w-[140px] block mx-auto">
-						Ver más
+						{t("verMas")}
 					</Button.To>
 				</main>
 			</article>

@@ -8,12 +8,12 @@ const Language = () => {
 
 	return (
 		<>
-			<span onClick={() => i18n.changeLanguage("es")} className={i18n.language == "es" ? "font-bold" : ""}>
-				Es
+			<span onClick={() => i18n.changeLanguage("es")} className={i18n.language == "es" ? "font-bold" : "cursor-pointer"}>
+				ES
 			</span>
 			<span className="mx-2 block">|</span>
-			<span onClick={() => i18n.changeLanguage("en")} className={i18n.language == "en" ? "font-bold" : ""}>
-				En
+			<span onClick={() => i18n.changeLanguage("en")} className={i18n.language == "en" ? "font-bold" : "cursor-pointer"}>
+				EN
 			</span>
 		</>
 	);
@@ -21,6 +21,7 @@ const Language = () => {
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
+	const { t } = useTranslation();
 
 	return (
 		<>
@@ -30,12 +31,12 @@ const Header = () => {
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
 					</Link>
-					<Button onClick={() => setOpen(!open)}>{open ? "Cerrar" : "Menú"}</Button>
+					<Button onClick={() => setOpen(!open)}>{open ? t("header.close") : t("header.menu")}</Button>
 				</div>
 
 				{/* // * Navegacion para escritorio */}
 				<div className="md:items-center md:justify-between py-6 px-4 shadow-sm hidden md:flex">
-					<Button onClick={() => setOpen(!open)}>{open ? "Cerrar" : "Menú"}</Button>
+					<Button onClick={() => setOpen(!open)}>{open ? t("header.close") : t("header.menu")}</Button>
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
 					</Link>
@@ -44,7 +45,7 @@ const Header = () => {
 						<div className="flex items-center justify-center text-black absolute -left-[75px] font-instrumentSans font-sm">
 							<Language />
 						</div>
-						<Button.Link url={""}>Book now</Button.Link>
+						<Button.Link url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>{t("bookNow")}</Button.Link>
 					</div>
 				</div>
 			</header>
@@ -55,43 +56,43 @@ const Header = () => {
 					<ul className="text-center w-full">
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"casa-raco"}>
-								Nosotros
+								{t("header.about")}
 							</Link>
 						</li>
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"promociones"}>
-								Ofertas especiales
+								{t("header.offsers")}
 							</Link>
 						</li>
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"habitaciones"}>
-								Habitaciones
+								{t("header.rooms")}
 							</Link>
 						</li>
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"experiencias"}>
-								Experiencias
+								{t("header.experiencies")}
 							</Link>
 						</li>
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"/gastronomia"}>
-								Gastronomía
+								{t("header.gastronomy")}
 							</Link>
 						</li>
 						<li className="mb-4 md:mb-6">
 							<Link onClick={() => setOpen(false)} to={"/sala-de-juntas"}>
-								Sala de juntas
+								{t("header.boardroom")}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={() => setOpen(false)} to={"/parras-coahuila"}>
-								Parras coahuila
+								{t("header.parras")}
 							</Link>
 						</li>
 					</ul>
 
 					<div className="w-full text-center py-10 md:hidden">
-						<Button.Link url={""}>Book now</Button.Link>
+						<Button.Link url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>{t("bookNow")}</Button.Link>
 					</div>
 
 					<div className="flex items-center justify-center text-black font-instrumentSans font-sm md:hidden">

@@ -6,8 +6,11 @@ import { TbPhoneCall } from "react-icons/tb";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+	const { t } = useTranslation();
+
 	return (
 		<footer className="w-full text-white">
 			<div className="bg-black py-16 text-center">
@@ -15,11 +18,9 @@ const Footer = () => {
 					<img src="/img/logo-menu.png" alt="icono" className="mx-auto w-[100px] mb-4 invert" />
 					<img src="/img/logotipo.png" className="mx-auto mb-10 invert" alt="Casa Raco" />
 					<div className="border border-white max-w-[780px] py-9 px-4 md:px-6 mx-auto mb-10">
-						<Text.TitleSections className="text-white">Suscríbete a nuestro newsletter</Text.TitleSections>
-						<Text className="mb-8">
-							Para mantenerte informado de todas <span className="font-bold">nuestras novedades y promociones.</span>
-						</Text>
-						<Button.Cafe className="rounded-none hover:text-black hover:border-black">Déjanos tu correo</Button.Cafe>
+						<Text.TitleSections className="text-white">{t("footer.news.title")}</Text.TitleSections>
+						<Text className="mb-8">{t("footer.news.desc")}</Text>
+						<Button.Cafe className="rounded-none hover:text-black hover:border-black">{t("footer.news.btn")}</Button.Cafe>
 					</div>
 
 					<address>
@@ -56,17 +57,17 @@ const Footer = () => {
 						<li className="mb-4 lg:mb-0">Casa Raco</li>
 						<li className="mb-4 lg:mb-0">
 							<ul className="flex items-center justify-center flex-wrap text-center">
-								<li className="w-full lg:w-auto">Políticas de reservación</li>
+								<li className="w-full lg:w-auto">{t("footer.politicas")}</li>
 								<li className="mx-3 hidden lg:block lg:w-auto">|</li>
 								<li className="w-full lg:w-auto">Cookies</li>
 								<li className="mx-3 hidden lg:block">|</li>
-								<li className="w-full lg:w-auto">Cancelar Reserva</li>
+								<li className="w-full lg:w-auto">{t("footer.cancelacion")}</li>
 								<li className="mx-3 hidden lg:w-auto lg:block">|</li>
-								<li className="w-full lg:w-auto">Derechos Reservados</li>
+								<li className="w-full lg:w-auto">{t("footer.derechos")}</li>
 							</ul>
 						</li>
 						<li>
-							Diseño y desarrollo x <span className="font-bold">MadebyPartners®</span>
+							{t("footer.made")} <span className="font-bold">MadebyPartners®</span>
 						</li>
 					</ul>
 				</Container>

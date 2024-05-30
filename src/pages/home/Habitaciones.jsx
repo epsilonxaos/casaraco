@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import { Container } from "../../components/Container";
 import Text from "../../components/Text";
@@ -23,15 +24,17 @@ export const Habitaciones = () => {
 };
 
 const CardHabitacion = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="absolute bg-[#d6c0ac] text-center w-full md:max-w-[365px] py-10 px-5 md:px-7 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:min-h-[515px]">
 			<img src="/img/home/Sello.png" alt="Sello" className="size-[118px] mx-auto mb-4" />
 
-			<Text.TitleSections className="text-black mb-4">Conoce nuestras habitaciones</Text.TitleSections>
-			<Text className="text-black mb-8">Nuestras cómodas habitaciones tienen todo lo necesario para que tengas una estancia placentera de acuerdo a tus necesidades.</Text>
+			<Text.TitleSections className="text-black mb-4">{t("home.rooms.title")}</Text.TitleSections>
+			<Text className="text-black mb-8">{t("home.rooms.desc")}</Text>
 
 			<Button.To url="/habitaciones" className="bg-transparent block max-w-[140px] mx-auto border-black text-black hover:bg-black hover:text-white">
-				Ver más
+				{t("verMas")}
 			</Button.To>
 		</div>
 	);

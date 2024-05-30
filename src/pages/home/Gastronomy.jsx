@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import Text from "../../components/Text";
 
 export const Gastronomy = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section className="grid grid-cols-1 md:grid-cols-2">
 			<picture className="col-span-1 order-2 md:order-1">
@@ -10,10 +13,10 @@ export const Gastronomy = () => {
 
 			<div className="col-span-1 px-4 min-h-[350px] bg-no-repeat py-20 bg-cover bg-right-bottom text-center flex items-center order-1 md:order-2" style={{ backgroundImage: "url(/img/home/bg-gastro.jpg)" }}>
 				<div className="max-w-[460px] mx-auto">
-					<Text.TitleSections className="mb-3">GASTRONOMÍA</Text.TitleSections>
-					<Text className="mb-5">Acompáñanos a vivir una experiencia gastronómica única con los mejores productos de la región.</Text>
+					<Text.TitleSections className="mb-3">{t("home.gastronomy.title")}</Text.TitleSections>
+					<Text className="mb-5">{t("home.gastronomy.desc")}</Text>
 					<Button.To url="/gastronomia" className="block max-w-[140px] mx-auto bg-transparent">
-						Ver más
+						{t("verMas")}
 					</Button.To>
 				</div>
 			</div>

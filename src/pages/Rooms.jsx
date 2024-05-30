@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Amenities } from "../components/Amenities";
 import { Banner } from "../components/Banner";
 import Button from "../components/Button";
@@ -5,6 +6,8 @@ import { Container } from "../components/Container";
 import Text from "../components/Text";
 
 export const Rooms = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<Banner src={"/img/rooms/banner.jpg"} />
@@ -13,11 +16,9 @@ export const Rooms = () => {
 				<Container className="text-center">
 					<img src="/img/logo-menu.png" alt="icono" className="mx-auto w-[100px] mb-4" />
 
-					<Text.Title className="mb-5">Te damos la bienvenida a</Text.Title>
+					<Text.Title className="mb-5">{t("rooms.title")}</Text.Title>
 
-					<Text className="max-w-[850px] mx-auto mb-10">
-						<span className="font-bold">Casa Raco</span>, el inicio de una estancia inolvidable en Parras, Coahuila. Nuestro hotel boutique es más que sólo un lugar de hospedaje, se trata de un espacio cuidadosamente diseñado para que vivas una experiencia única.
-					</Text>
+					<Text className="max-w-[850px] mx-auto mb-10">{t("rooms.desc")}</Text>
 
 					<Amenities />
 				</Container>
@@ -36,11 +37,13 @@ export const Rooms = () => {
 
 						<main className="text-black text-center py-8 pt-20 lg:pt-8 px-6 lg:w-[40%]">
 							<div className="max-w-[290px] mx-auto">
-								<Text.TitleSections className="text-black mb-5">habitación doble QUEEN</Text.TitleSections>
-								<Text className="mb-6">Nuestra cómoda y acogedora habitación doble es la opción perfecta para tu próxima visita.</Text>
+								<Text.TitleSections className="text-black mb-5">{t("rooms.1.title")}</Text.TitleSections>
+								<Text className="mb-6">{t("rooms.1.text")}</Text>
 							</div>
 
-							<Button.Cafe>Book now</Button.Cafe>
+							<a href="https://hotels.cloudbeds.com/reservation/aEkhze" target="_blank" rel="noopener noreferrer">
+								<Button.Cafe>Book now</Button.Cafe>
+							</a>
 						</main>
 					</div>
 
@@ -55,8 +58,8 @@ export const Rooms = () => {
 
 						<main className="text-black text-center py-8 pt-20 lg:pt-8 px-6 lg:w-[40%] lg:order-1">
 							<div className="max-w-[290px] mx-auto">
-								<Text.TitleSections className="text-black mb-5">habitación KING</Text.TitleSections>
-								<Text className="mb-6">Nuestras habitaciones sencillas están perfectamente equipadas para garantizar una estancia cómoda y placentera.</Text>
+								<Text.TitleSections className="text-black mb-5">{t("rooms.2.title")}</Text.TitleSections>
+								<Text className="mb-6">{t("rooms.2.text")}</Text>
 							</div>
 
 							<Button.Cafe>Book now</Button.Cafe>

@@ -1,19 +1,22 @@
+import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import { Container } from "../../components/Container";
 import Text from "../../components/Text";
 
 export const Experiences = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section className="py-10 lg:py-16 xl:py-24">
 			<Container className="px-0">
 				<div className="grid grid-cols-1 md:grid-cols-3 md:items-center">
 					<div className="col-span-1 px-4 py-10 text-center lg:pr-10">
 						<div className="max-w-[350px] ml-auto">
-							<Text.TitleSections className="mb-3">Experiencias</Text.TitleSections>
-							<Text className="mb-5">Parras está lleno de magia por ser descubierta. Acompáñanos a crear una experiencia a tu medida.</Text>
+							<Text.TitleSections className="mb-3">{t("home.experience.title")}</Text.TitleSections>
+							<Text className="mb-5">{t("home.experience.desc")}</Text>
 
 							<Button.To url="/experiencias" className="block max-w-[140px] mx-auto">
-								Ver más
+								{t("verMas")}
 							</Button.To>
 						</div>
 					</div>
