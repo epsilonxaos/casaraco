@@ -11,7 +11,7 @@ export const Offers = () => {
 			<Container>
 				<Text.TitleSections className="mb-6">{t("home.offsers.title")}</Text.TitleSections>
 
-				<Text className="mb-10">{t("home.offsers.desc")}</Text>
+				<Text className="mb-10 lg:mb-16 xl:mb-24">{t("home.offsers.desc")}</Text>
 			</Container>
 
 			<div className="relative">

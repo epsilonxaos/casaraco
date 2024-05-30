@@ -5,7 +5,7 @@ import Text from "../../components/Text";
 
 export const Habitaciones = () => {
 	return (
-		<section className="bg-no-repeat bg-right-top bg-cover py-10 lg:py-16 xl:py-24" style={{ backgroundImage: "url(/img/home/fondo-habitaciones.jpg)" }}>
+		<section className="bg-no-repeat bg-right-top bg-cover py-10 lg:py-16 xl:py-[160px]" style={{ backgroundImage: "url(/img/home/fondo-habitaciones.jpg)" }}>
 			<Container className="max-w-[1500px] px-0">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-60 md:gap-2 relative">
 					<picture className="col-span-1">

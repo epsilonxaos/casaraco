@@ -7,7 +7,7 @@ export const Experiences = () => {
 	const { t } = useTranslation();
 
 	return (
-		<section className="py-10 lg:py-16 xl:py-24">
+		<section className="py-10 lg:py-16 xl:pb-32 xl:pt-40">
 			<Container className="px-0">
 				<div className="grid grid-cols-1 md:grid-cols-3 md:items-center">
 					<div className="col-span-1 px-4 py-10 text-center lg:pr-10">
