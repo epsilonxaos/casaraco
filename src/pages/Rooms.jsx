@@ -42,7 +42,9 @@ export const Rooms = () => {
 							</div>
 
 							<a href="https://hotels.cloudbeds.com/reservation/aEkhze" target="_blank" rel="noopener noreferrer">
-								<Button.Cafe>Book now</Button.Cafe>
+								<Button.Link className={"bg-cafe text-crema"} url={"https://hotels.cloudbeds.com/reservation/aEkhze"} blank={false}>
+									Book now
+								</Button.Link>
 							</a>
 						</main>
 					</div>
@@ -62,7 +64,9 @@ export const Rooms = () => {
 								<Text className="mb-6">{t("rooms.2.text")}</Text>
 							</div>
 
-							<Button.Cafe>Book now</Button.Cafe>
+							<Button.Link className={"bg-cafe text-crema"} url={"https://hotels.cloudbeds.com/reservation/aEkhze"} blank={false}>
+								Book now
+							</Button.Link>
 						</main>
 					</div>
 				</Container>

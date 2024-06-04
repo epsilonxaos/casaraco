@@ -67,7 +67,9 @@ const Footer = () => {
 							</ul>
 						</li>
 						<li>
-							{t("footer.made")} <span className="font-bold">MadebyPartners®</span>
+							<a href="https://madeby.partners/" target="_blank" rel="noopener noreferrer">
+								{t("footer.made")} <span className="font-bold">MadebyPartners®</span>
+							</a>
 						</li>
 					</ul>
 				</Container>

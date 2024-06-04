@@ -18,13 +18,13 @@ export const Offers = () => {
 				<div className="bg-cafe w-full h-[160px] absolute top-1/2 -translate-y-1/2 hidden lg:block" />
 
 				<div className="max-w-[1500px] grid lg:grid-cols-3 grid-cols-1 pt-10 relative z-10 mx-auto">
-					<CardOffer cover="/img/home/imagen1.jpg" url={"/sala-de-juntas"}>
+					<CardOffer cover="/img/home/imagen1.jpg" url={"/promociones"}>
 						<Text className="text-black mb-4">{t("home.offsers.card1")}</Text>
 					</CardOffer>
-					<CardOffer cover="/img/home/imagen2.jpg" url={"/habitaciones"}>
+					<CardOffer cover="/img/home/imagen2.jpg" url={"/promociones"}>
 						<Text className="text-black mb-4">{t("home.offsers.card2")}</Text>
 					</CardOffer>
-					<CardOffer cover="/img/home/imagen3.jpg" url={"/"}>
+					<CardOffer cover="/img/home/imagen3.jpg" url={"/promociones"}>
 						<Text className="text-black mb-4">{t("home.offsers.card3")}</Text>
 					</CardOffer>
 				</div>

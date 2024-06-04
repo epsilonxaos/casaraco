@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Banner } from "../components/Banner";
 import { SectionBrownAndWhite } from "../components/SectionBrownAndWhite";
 import Text from "../components/Text";
+import Button from "../components/Button";
 
 export const Boardroom = () => {
 	const { t } = useTranslation();
@@ -37,6 +38,10 @@ export const Boardroom = () => {
 								<Text className="mb-3">{t("boardroom.text7")}</Text>
 							</li>
 						</ul>
+
+						<Button.Link className={"inline-block mt-6"} url={"https://wa.me/+18553409046"}>
+							{t("masInfo")}
+						</Button.Link>
 					</>
 				}
 				footer={

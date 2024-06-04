@@ -17,9 +17,9 @@ const ButtonCafe = ({ children, onClick, className = "" }) => {
 	);
 };
 
-const Link = ({ children, url }) => {
+const Link = ({ children, url, className, blank = true }) => {
 	return (
-		<a className="py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] xl:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors" href={url} target="_blank" rel="noopener noreferrer">
+		<a className={twMerge("py-3 uppercase bg-crema border-2 px-4 min-w-[80px] md:min-w-[120px] xl:min-w-[140px] md:text-sm lg:text-base border-cafe rounded-xl text-cafe hover:bg-cafe hover:text-white transition-colors", className)} href={url} {...(blank && { target: "_blank" })} rel="noopener noreferrer">
 			{children}
 		</a>
 	);
