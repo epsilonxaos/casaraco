@@ -7,11 +7,11 @@ export const Offers = () => {
 	const { t } = useTranslation();
 
 	return (
-		<section className="py-10 lg:py-16 xl:py-24 text-center">
+		<section className="py-10 lg:py-16 xl:pt-[60px] xl:pb-20 text-center">
 			<Container>
 				<Text.TitleSections className="mb-6">{t("home.offsers.title")}</Text.TitleSections>
 
-				<Text className="mb-10 lg:mb-16 xl:mb-24">{t("home.offsers.desc")}</Text>
+				<Text className="mb-10 lg:mb-16 xl:mb-[60px]">{t("home.offsers.desc")}</Text>
 			</Container>
 
 			<div className="relative">

@@ -35,7 +35,7 @@ const Header = () => {
 				</div>
 
 				{/* // * Navegacion para escritorio */}
-				<div className="md:items-center md:justify-between py-6 px-4 shadow-sm hidden md:flex">
+				<div className="md:items-center md:justify-between py-3 px-4 shadow-sm hidden md:flex">
 					<Button onClick={() => setOpen(!open)}>{open ? t("header.close") : t("header.menu")}</Button>
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />

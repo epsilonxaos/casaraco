@@ -23,7 +23,7 @@ const Footer = () => {
 						<Button.Cafe className="rounded-none hover:text-black hover:border-black">{t("footer.news.btn")}</Button.Cafe>
 					</div>
 
-					<address>
+					<address style={{ fontStyle: "normal" }}>
 						<Text className="mb-6">Casa Raco Casa, C. Francisco I. Madero 99, Centro, 27980 Parras de la Fuente, Coah., México, Parras de la Fuente</Text>
 
 						<ul className="sm:flex sm:items-center sm:justify-center sm:gap-10">

@@ -18,6 +18,8 @@ export const Croquis = () => {
 				<img src="/img/home/croquis.svg" alt="Ubicacion" className="bg-no-repeat bg-contain" style={{ backgroundImage: "url(/img/home/bg-croquis.png)" }} />
 			</a>
 
+			{/* //Todo Ajustar textos */}
+			<div className=" px-3 py-3 bg-black text-white">Haz clic sobre el mapa para mas información</div>
 			<div className="mx-auto max-w-[600px] text-center bg-[#d6c0ac] py-3 px-4 md:px-10 md:relative lg:-top-6">
 				<Text> C. Francisco I. Madero 99, Centro, 27980 Parras de la Fuente, Coah., México, Parras de la Fuente</Text>
 			</div>
