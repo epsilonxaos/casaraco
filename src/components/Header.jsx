@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import "../css/btnMenu.css";
 
 const Language = () => {
 	const { i18n } = useTranslation();
@@ -28,16 +29,19 @@ const Header = () => {
 			{/* // Todo: Ajustar el menu de movil, hacer nmas corto, cambiar menu por lineas y agregar boton de booknow mas pequeño */}
 			<header className="bg-crema fixed top-0 left-0 w-full z-50">
 				{/* // * Navegacion para movil */}
-				<div className="flex items-center justify-center py-4 px-4 shadow-sm md:hidden">
-					<Button className="absolute left-0 scale-75" onClick={() => setOpen(!open)}>
-						{open ? t("header.close") : t("header.menu")}
-					</Button>
+				<div className="flex items-center justify-between py-2 px-4 shadow-sm md:hidden">
 					<Link to={"/"} onClick={() => setOpen(false)}>
 						<img src="/img/logotipo.png" className="w-[120px] md:w-[180px]" alt="Casa raco" />
 					</Link>
-					<Button.Link className={"absolute right-0 scale-75"} blank={false} url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>
-						{t("bookNow")}
-					</Button.Link>
+
+					<div className="flex items-center">
+						<Button.Link className={"text-xs py-2 scale-90"} blank={false} url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>
+							{t("bookNow")}
+						</Button.Link>
+						<button className={`menu menu-3 ${open ? "active" : ""}`} onClick={() => setOpen(!open)}>
+							<span></span>
+						</button>
+					</div>
 				</div>
 
 				{/* // * Navegacion para escritorio */}
@@ -98,11 +102,11 @@ const Header = () => {
 						</li>
 					</ul>
 
-					<div className="w-full text-center py-10 md:hidden">
+					{/* <div className="w-full text-center py-10 md:hidden">
 						<Button.Link url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>{t("bookNow")}</Button.Link>
-					</div>
+					</div> */}
 
-					<div className="flex items-center justify-center text-black font-instrumentSans font-sm md:hidden">
+					<div className="flex pt-10 items-center justify-center text-black font-instrumentSans font-sm md:hidden">
 						<Language />
 					</div>
 
