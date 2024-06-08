@@ -13,10 +13,10 @@ const Footer = () => {
 
 	return (
 		<footer className="w-full text-white">
-			<div className="bg-black py-16 text-center">
+			<div className="bg-black py-6 md:py-16 text-center">
 				<Container>
-					<img src="/img/logo-menu.png" alt="icono" className="mx-auto w-[100px] mb-4 invert" />
-					<img src="/img/logotipo.png" className="mx-auto mb-10 invert" alt="Casa Raco" />
+					<img src="/img/logo-menu.png" alt="icono" className="mx-auto w-[60px] md:w-[100px] mb-4 invert" />
+					<img src="/img/logotipo.png" className="mx-auto w-[150px] md:w-auto mb-10 invert" alt="Casa Raco" />
 					<div className="border border-white max-w-[780px] py-9 px-4 md:px-6 mx-auto mb-10">
 						<Text.TitleSections className="text-white">{t("footer.news.title")}</Text.TitleSections>
 						<Text className="mb-8">{t("footer.news.desc")}</Text>
@@ -53,9 +53,9 @@ const Footer = () => {
 
 			<div className="bg-cafe py-5 font-instrumentSans">
 				<Container>
-					<ul className="mx-auto flex w-full flex-col items-center justify-between md:flex-row lg:text-sm xl:text-base">
-						<li className="mb-4 lg:mb-0">Casa Raco</li>
-						<li className="mb-4 lg:mb-0">
+					<ul className="mx-auto flex w-full flex-col items-center justify-between text-xs md:flex-row lg:text-sm xl:text-base">
+						<li className="mb-0 lg:mb-0">Casa Raco</li>
+						<li className="mb-0 lg:mb-0">
 							<ul className="flex items-center justify-center flex-wrap text-center">
 								<li className="w-full lg:w-auto">{t("footer.politicas")}</li>
 								<li className="mx-3 hidden lg:block lg:w-auto">|</li>

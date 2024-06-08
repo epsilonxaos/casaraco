@@ -30,6 +30,14 @@ export const Amenities = () => {
 				<img src="/img/icons/comedor.svg" className="size-[42px] mb-3 object-contain block mx-auto" alt="Aire acondicionado" />
 				<Text className="text-black !leading-5">{t("amenidad.6")}</Text>
 			</li>
+			<li className="w-1/2 md:w-1/3 lg:w-auto md:mb-0">
+				<img src="/img/icons/comedor.svg" className="size-[42px] mb-3 object-contain block mx-auto" alt="Aire acondicionado" />
+				<Text className="text-black !leading-5">{t("amenidad.7")}</Text>
+			</li>
+			<li className="w-1/2 md:w-1/3 lg:w-auto md:mb-0">
+				<img src="/img/icons/comedor.svg" className="size-[42px] mb-3 object-contain block mx-auto" alt="Aire acondicionado" />
+				<Text className="text-black !leading-5">{t("amenidad.8")}</Text>
+			</li>
 		</ul>
 	);
 };

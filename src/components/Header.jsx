@@ -25,13 +25,19 @@ const Header = () => {
 
 	return (
 		<>
+			{/* // Todo: Ajustar el menu de movil, hacer nmas corto, cambiar menu por lineas y agregar boton de booknow mas pequeño */}
 			<header className="bg-crema fixed top-0 left-0 w-full z-50">
 				{/* // * Navegacion para movil */}
-				<div className="flex items-center justify-between py-4 px-4 shadow-sm md:hidden">
+				<div className="flex items-center justify-center py-4 px-4 shadow-sm md:hidden">
+					<Button className="absolute left-0 scale-75" onClick={() => setOpen(!open)}>
+						{open ? t("header.close") : t("header.menu")}
+					</Button>
 					<Link to={"/"} onClick={() => setOpen(false)}>
-						<img src="/img/logotipo.png" className="w-[180px]" alt="Casa raco" />
+						<img src="/img/logotipo.png" className="w-[120px] md:w-[180px]" alt="Casa raco" />
 					</Link>
-					<Button onClick={() => setOpen(!open)}>{open ? t("header.close") : t("header.menu")}</Button>
+					<Button.Link className={"absolute right-0 scale-75"} blank={false} url={"https://hotels.cloudbeds.com/reservation/aEkhze"}>
+						{t("bookNow")}
+					</Button.Link>
 				</div>
 
 				{/* // * Navegacion para escritorio */}
@@ -51,7 +57,6 @@ const Header = () => {
 					</div>
 				</div>
 			</header>
-
 			{open && <div className="bg-black fixed z-30 w-full h-svh bg-opacity-20 backdrop-blur-sm" onClick={() => setOpen(false)}></div>}
 			{open && (
 				<nav className="uppercase bg-crema w-full pt-[100px] pb-8 fixed z-40 top-0 left-0 h-svh flex items-center justify-center flex-wrap flex-row md:min-h-[665px] md:h-auto overflow-auto">

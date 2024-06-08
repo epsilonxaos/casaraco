@@ -8,11 +8,13 @@ import { Gastronomy } from "./home/Gastronomy";
 import { Habitaciones } from "./home/Habitaciones";
 import { Offers } from "./home/Offers";
 import { Video } from "./home/Video";
+import Video2 from "./home/Video2";
 
 export default function Home() {
 	return (
 		<>
-			<Video />
+			{/* <Video /> */}
+			<Video2 src={"/video/video.mp4"} />
 			<Bienvenida />
 			<Banner src={"/img/home/banner3.jpg"} className="h-[275px]" />
 			<Croquis />
