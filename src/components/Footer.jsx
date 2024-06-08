@@ -99,6 +99,7 @@ const Newsletter = () => {
 };
 
 const FormMail = ({ onClose }) => {
+	const { t } = useTranslation();
 	const {
 		formState: { errors },
 		register,
@@ -158,7 +159,7 @@ const FormMail = ({ onClose }) => {
 					<div></div>
 					<div></div>
 				</div>
-				<span className="px-5 py-3 text-sm font-medium text-center text-white bg-cafe rounded-lg cursor-pointer uppercase">Subscribe</span>
+				<span className="px-5 py-3 text-sm font-medium text-center text-white bg-cafe rounded-lg cursor-pointer uppercase">{t("subscribe")}</span>
 			</button>
 		</form>
 	);
