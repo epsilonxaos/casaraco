@@ -28,7 +28,7 @@ export const Offers = () => {
 					<CardOffer cover="/img/home/imagen2.jpg" url={"/promociones"} textBtn={t("verMas")}>
 						<Text className="text-black mb-4">{t("home.offsers.card2")}</Text>
 					</CardOffer>
-					<CardOffer cover="/img/home/imagen3.jpg" url={"/promociones"} textBtn={t("booNow")}>
+					<CardOffer cover="/img/home/imagen3.jpg" url={"/promociones"} textBtn={t("bookNow")}>
 						<Text className="text-black mb-4">{t("home.offsers.card3")}</Text>
 					</CardOffer>
 				</div>

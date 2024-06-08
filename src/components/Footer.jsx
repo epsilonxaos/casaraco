@@ -53,20 +53,20 @@ const Footer = () => {
 
 			<div className="bg-cafe py-5 font-instrumentSans">
 				<Container>
-					<ul className="mx-auto flex w-full flex-col items-center justify-between text-xs md:flex-row lg:text-sm xl:text-base">
-						<li className="mb-0 lg:mb-0">Casa Raco</li>
+					<ul className="mx-auto flex w-full flex-col items-center justify-between lg:justify-center relative text-xs md:flex-row lg:text-sm xl:text-base">
+						<li className="mb-0 lg:mb-0 lg:absolute lg:left-0">Casa Raco</li>
 						<li className="mb-0 lg:mb-0">
 							<ul className="flex items-center justify-center flex-wrap text-center">
-								<li className="w-full lg:w-auto">{t("footer.politicas")}</li>
-								<li className="mx-3 hidden lg:block lg:w-auto">|</li>
-								<li className="w-full lg:w-auto">Cookies</li>
-								<li className="mx-3 hidden lg:block">|</li>
-								<li className="w-full lg:w-auto">{t("footer.cancelacion")}</li>
-								<li className="mx-3 hidden lg:w-auto lg:block">|</li>
-								<li className="w-full lg:w-auto">{t("footer.derechos")}</li>
+								<li className="w-full md:w-auto">{t("footer.politicas")}</li>
+								<li className="mx-3 hidden md:block md:w-auto">|</li>
+								<li className="w-full md:w-auto">Cookies</li>
+								<li className="mx-3 hidden md:block">|</li>
+								<li className="w-full md:w-auto">{t("footer.cancelacion")}</li>
+								<li className="mx-3 hidden md:w-auto md:block">|</li>
+								<li className="w-full md:w-auto">{t("footer.derechos")}</li>
 							</ul>
 						</li>
-						<li>
+						<li className="lg:absolute lg:right-0">
 							<a href="https://madeby.partners/" target="_blank" rel="noopener noreferrer">
 								{t("footer.made")} <span className="font-bold">MadebyPartners®</span>
 							</a>
