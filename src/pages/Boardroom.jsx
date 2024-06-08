@@ -39,7 +39,7 @@ export const Boardroom = () => {
 							</li>
 						</ul>
 
-						<div className="text-center">
+						<div className="text-center mb-4">
 							<Button.Link className={"inline-block mt-6"} url={"https://wa.me/+18553409046"}>
 								{t("masInfo")}
 							</Button.Link>
