@@ -39,9 +39,11 @@ export const Boardroom = () => {
 							</li>
 						</ul>
 
-						<Button.Link className={"inline-block mt-6"} url={"https://wa.me/+18553409046"}>
-							{t("masInfo")}
-						</Button.Link>
+						<div className="text-center">
+							<Button.Link className={"inline-block mt-6"} url={"https://wa.me/+18553409046"}>
+								{t("masInfo")}
+							</Button.Link>
+						</div>
 					</>
 				}
 				footer={
